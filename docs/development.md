@@ -1,4 +1,4 @@
-# 🔍 Neon Schema Diff Action Development
+# 🔍 Neon GitHub Action Development
 
 Development template from
 [https://github.com/actions/typescript-action](https://github.com/actions/typescript-action).

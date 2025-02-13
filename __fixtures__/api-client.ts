@@ -8,9 +8,7 @@ export function apiResponse<T>(status: number, data: T): AxiosResponse<T> {
     data,
     statusText: '',
     headers: new AxiosHeaders(),
-    config: {
-      headers: new AxiosHeaders()
-    }
+    config: { headers: new AxiosHeaders() }
   }
 }
 
@@ -18,10 +16,5 @@ export function githubApiResponse<T, S extends 200 | 201 | 204>(
   data: T,
   status: S
 ) {
-  return {
-    data,
-    headers: {},
-    status,
-    url: 'http://example.com'
-  }
+  return { data, headers: {}, status, url: 'http://example.com' }
 }

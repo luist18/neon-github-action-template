@@ -1,16 +1,16 @@
 {
-  "name": "schema-diff",
-  "description": "Neon Schema Diff GitHub Action",
-  "version": "1.0.1",
+  "name": "neon-github-action-template",
+  "description": "Neon GitHub Action template",
+  "version": "0.0.1",
   "author": "",
   "private": false,
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/neondatabase/schema-diff-action"
+    "url": "git+https://github.com/neondatabase-labs/neon-github-action-template.git"
   },
   "bugs": {
-    "url": "https://github.com/neondatabase/schema-diff-action/issues"
+    "url": "https://github.com/neondatabase-labs/neon-github-action-template/issues"
   },
   "keywords": [
     "actions"

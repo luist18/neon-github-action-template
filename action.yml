@@ -1,46 +1,19 @@
-name: Neon Schema Diff GitHub Action
-description:
-  Create GitHub Pull Request comments with the schema diff between two branches
+name: Neon GitHub Action template
+description: Neon GitHub Action template
 author: Neon Database
 branding:
   icon: align-left
   color: green
 inputs:
-  github-token:
-    description: The GitHub token used to create an authenticated client
-    required: false
-    default: ${{ github.token }}
-  project_id:
-    description: The project id
-    required: true
-  compare_branch:
-    description: The compare branch name or id (downstream branch)
-    required: true
   api_key:
     description: The Neon API key
     required: true
-  base_branch:
-    description: The base branch name or id (upstream branch)
-    required: false
   api_host:
     description: The Neon API Host
     default: https://console.neon.tech/api/v2
-  database:
-    description: The database name
-    default: neondb
-  timestamp:
-    description:
-      The timestamp of the downstream branch to compare against. Leave it empty
-      to compare against the latest changes in your compare branch
-  lsn:
-    description:
-      The LSN of the downstream branch to compare against. Leave it empty to
-      compare against the latest changes in your compare branch
 outputs:
-  diff:
-    description: The schema diff SQL patch
-  comment_url:
-    description: The url of the comment containing the schema diff
+  projects:
+    description: The list of projects in your Neon account
 runs:
   using: node20
   main: dist/index.js
